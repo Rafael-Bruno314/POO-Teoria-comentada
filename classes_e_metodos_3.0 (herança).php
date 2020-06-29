@@ -35,9 +35,9 @@
 	
 	class MyOtherClass extends Myclass	//Herança de classe, seria uma extenção da classe pai (Myclass) ou seja ela já tem em si todos os metodos e propriedades da classe pai
 	{
-		public function __construct()	//Você pode sobrescrever métodos e propriedades apenas declará-los com o mesmo nome na classe herdeira
+		public function __construct()	//Você pode sobrescrever métodos e propriedades se apenas declará-los com o mesmo nome na classe herdeira
 		{
-			parent:: __construct();	//Ao usar a palavra parent com o operador de resolução de escopo (::) você pode acionar o método original enquanto o sobrescreve ou já tendo o sobrescrito
+			parent:: __construct();	//Ao usar a palavra parent com o operador de resolução de escopo (::) você pode acionar o método original (construct da classe pai) enquanto o sobrescreve ou já tendo o sobrescrito (e depois usa o constructor dessa classe herdeira)
 			echo "Um novo construtor em ".__CLASS__.".<br/>";
 		}
 		

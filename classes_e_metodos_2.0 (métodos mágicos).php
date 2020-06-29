@@ -40,7 +40,7 @@
 	
 	//echo $obj -> getProperty();
 	
-	echo $obj;
+	echo $obj; //Tratou o objeto como string
 	
 	unset($obj); //Destói o objeto (e automaticamente executa o método __destruct
 	

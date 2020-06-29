@@ -75,7 +75,7 @@
 		 */
 	}
 	
-	$newobj = new MyOtherClass;		
+	$newobj = new MyOtherClass;
 	
 	//echo $newobj -> getProperty();	//Nesse caso irá apresentar um erro pois um método protegido não pode ser acessado através de um objeto de uma classe descendente
 	
@@ -87,8 +87,8 @@
 	
 	do
 	{
-		//invoca o método plusOne sem instanciar a classe MyClass
-		echo MyClass::plusOne();
-	}while( MyClass::$count < 10);
+		//invoca o método plusOne sem instanciar a classe MyClass (sem precisar criar um objeto)
+		echo $newobj -> plusOne(); //Feito por instanciamento de classe (usando um objeto)
+	}while( MyClass::$count < 10); //Feito sem precisar criar um objeto (Dá no mesmo).
 	
 ?>
